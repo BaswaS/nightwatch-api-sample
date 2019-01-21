@@ -1,0 +1,8 @@
+node_modules/
+.idea/
+reports*
+debug.log
+npm-debug.log*
+.vscode/
+.history/
+
