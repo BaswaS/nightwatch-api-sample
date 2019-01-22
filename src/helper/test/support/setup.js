@@ -2,9 +2,9 @@
 /* this is a setup file.Basically allows us to setup/end
 certain things before and after the test scenarios */
 
-const { setDefaultTimeout, BeforeAll, AfterAll } = require('cucumber')
+import { setDefaultTimeout, BeforeAll, AfterAll } from require('cucumber')
 
-const { createSession, closeSession } = require('nightwatch-api')
+import { createSession, closeSession } from require('nightwatch-api')
 
 setDefaultTimeout(60000)
 

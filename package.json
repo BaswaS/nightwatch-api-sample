@@ -45,7 +45,7 @@
   },
   "scripts": {
     "test:setup": "babel-node src/helper/test/server.js",
-    "test:run": "cucumber-js --require-module babel-core/register --require test/support --require step-definitions --format node_modules/cucumber-pretty",
+    "test:run": "cucumber-js --require-module babel-core/register --require test/support --require stepDefinitions --format node_modules/cucumber-pretty",
     "test": "start-server-and-test test:setup http-get://localhost:4444/status test:run",
     "test1": "better-npm-run test -e chrome --tag=xm",
     "cloudTest": "bash ./scripts/cloudTestEntry.sh",
