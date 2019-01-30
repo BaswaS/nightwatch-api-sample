@@ -48,7 +48,7 @@
     "test:setup": "babel-node src/helper/test/server.js",
     "test:run": "cucumber-js  src/frontend/features/*.feature --require src/frontend/stepDefinitions --require-module babel-core/register --require src/helper/test/support  --format node_modules/cucumber-pretty",
     "test": "start-server-and-test test:setup http-get://localhost:4444/wd/hub/static/resource/hub.html test:run",
-    "testB": "bash execute.sh chrome",
+    "testB": "bash execute.sh ie",
     "cloudTest": "bash ./scripts/cloudTestEntry.sh",
     "test:smokeRegression": "better-npm-run test --tag smoke --tag regression",
     "lint": "eslint src",
